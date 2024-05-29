@@ -12,7 +12,7 @@ form.addEventListener('submit', function(e){     // here we just create one 'sub
     } else if(weight === '' || weight < 0 || isNaN(weight)){        // here we just paas the condition of 'weight'
         result.innerHTML = `Please give a valid weight ${weight}`
     }else{
-        const bmi = (weight / ((height * height) / 10000)).toFixed(2);        // here we give the gormula of BMI
+        const bmi = (weight / ((height * height) / 10000)).toFixed(2);        // here we give the formula of BMI
         result.innerHTML = `<span>${bmi}</span>`
     }
 
